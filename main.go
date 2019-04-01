@@ -14,8 +14,12 @@
 
 package main
 
-import "github.com/humorliang/cmdApp/cmd"
+import (
+	"github.com/humorliang/cmdApp/cmd"
+	"fmt"
+)
 
 func main() {
 	cmd.Execute()
+	fmt.Println(cmd.UserName,cmd.PassWord)
 }
